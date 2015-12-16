@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		665561E48F18B7EF8E600AB2 /* Pods_FontAwesomeTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54E9AEF2B8F7B802108E6446 /* Pods_FontAwesomeTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C10BF5E41C20DD7800B053FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10BF5E31C20DD7800B053FA /* AppDelegate.swift */; };
 		C10BF5E61C20DD7800B053FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10BF5E51C20DD7800B053FA /* ViewController.swift */; };
 		C10BF5E91C20DD7800B053FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C10BF5E71C20DD7800B053FA /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4714437E8FBE43E0F632DE2A /* Pods-FontAwesomeTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontAwesomeTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-FontAwesomeTest/Pods-FontAwesomeTest.release.xcconfig"; sourceTree = "<group>"; };
+		54E9AEF2B8F7B802108E6446 /* Pods_FontAwesomeTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FontAwesomeTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10BF5E01C20DD7800B053FA /* FontAwesomeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontAwesomeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C10BF5E31C20DD7800B053FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C10BF5E51C20DD7800B053FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		C10BF5EA1C20DD7800B053FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C10BF5ED1C20DD7800B053FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C10BF5EF1C20DD7800B053FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF9F40EDAF0694DB92EE921E /* Pods-FontAwesomeTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FontAwesomeTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FontAwesomeTest/Pods-FontAwesomeTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				665561E48F18B7EF8E600AB2 /* Pods_FontAwesomeTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FA682DCCA687DA5A0E25837 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54E9AEF2B8F7B802108E6446 /* Pods_FontAwesomeTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C10BF5D71C20DD7800B053FA = {
 			isa = PBXGroup;
 			children = (
 				C10BF5E21C20DD7800B053FA /* FontAwesomeTest */,
 				C10BF5E11C20DD7800B053FA /* Products */,
+				E166900E2287205328B50609 /* Pods */,
+				0FA682DCCA687DA5A0E25837 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = FontAwesomeTest;
 			sourceTree = "<group>";
 		};
+		E166900E2287205328B50609 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF9F40EDAF0694DB92EE921E /* Pods-FontAwesomeTest.debug.xcconfig */,
+				4714437E8FBE43E0F632DE2A /* Pods-FontAwesomeTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C10BF5F21C20DD7800B053FA /* Build configuration list for PBXNativeTarget "FontAwesomeTest" */;
 			buildPhases = (
+				085A27BFDE1DC5D1BC9B17EE /* Check Pods Manifest.lock */,
 				C10BF5DC1C20DD7800B053FA /* Sources */,
 				C10BF5DD1C20DD7800B053FA /* Frameworks */,
 				C10BF5DE1C20DD7800B053FA /* Resources */,
+				F0DE6A30518969BB65A395E2 /* Embed Pods Frameworks */,
+				68E086CC94001323718C991A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		085A27BFDE1DC5D1BC9B17EE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		68E086CC94001323718C991A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FontAwesomeTest/Pods-FontAwesomeTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0DE6A30518969BB65A395E2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FontAwesomeTest/Pods-FontAwesomeTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C10BF5DC1C20DD7800B053FA /* Sources */ = {
@@ -245,6 +320,7 @@
 		};
 		C10BF5F31C20DD7800B053FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF9F40EDAF0694DB92EE921E /* Pods-FontAwesomeTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FontAwesomeTest/Info.plist;
@@ -256,6 +332,7 @@
 		};
 		C10BF5F41C20DD7800B053FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4714437E8FBE43E0F632DE2A /* Pods-FontAwesomeTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FontAwesomeTest/Info.plist;
@@ -284,6 +361,7 @@
 				C10BF5F41C20DD7800B053FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
